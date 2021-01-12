@@ -1,6 +1,6 @@
 /****************************  IMPORTED FONTS  ****************************/
 
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
 
 
 /****************************  BASE STYLES  ****************************/
@@ -29,7 +29,6 @@ body {
 
 
 .wrapper {
-    /* width: 100%; */
     margin: 0 auto;
 }
 
@@ -47,6 +46,7 @@ p {
 .logo-text {
     color: rgb(94, 94, 97);
     margin: 0;
+    padding: 1rem;
 }
 
 .nav {
@@ -76,14 +76,14 @@ a:visited {
 }
 
 a:hover {
-    color: rgb(245, 179, 58);
+    color: rgb(148, 122, 75);
 }
 
 
 /****************************  HEADER STYLES  ****************************/
 
 header {
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 }
 
 header p {
@@ -96,16 +96,70 @@ header p {
 .content {
     background-color: rgb(240, 238, 238);
     width: 100%;
-    padding-top: 2rem;
+
 }
 
-.content-head {
+.content,
+footer {
+    padding: 3rem 0;
+}
+
+.content-label {
     text-transform: uppercase;
+}
+
+.content-label,
+.content p {
     margin-bottom: 3rem;
 }
 
 .img-responsive {
     width: 95%;
+    margin-bottom: .5rem;
+}
+
+.content-style {
+    font-weight: 600;
+}
+
+.content p {
+    padding: 0 3rem;
+
+}
+
+
+
+/****************************  FOOTER STYLES  ****************************/
+
+footer p {
+    padding: 0 3rem;
+
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.contact-info {
+    white-space: pre;
+}
+
+.email {
+    padding-bottom: 2.5rem;
+}
+
+.bottom {
+    display: flex;
+    border-top: 1px solid rgb(172, 172, 172);
+    ;
+}
+
+.all-caps {
+    text-transform: uppercase;
+}
+
+.bottom p {
+    font-weight: bold;
 }
 
 
@@ -120,6 +174,7 @@ header p {
         background-color: rgb(146, 224, 174);
     }
 }
+
 
 
 /* (DESKTOP VIEW) Will apply from 1024px onwards */
