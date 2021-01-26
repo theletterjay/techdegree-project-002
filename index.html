@@ -13,62 +13,121 @@
             <nav class="top-links">
                 <h2 class="logo-text">Jay Franklin</h2>
                 <ul class="nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Extras</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
 
             <header>
-                <img src="img/responsive-layout-profile.png" alt="Profile image">
-                <p>Hi everyone! I'm a newbie developer who is looking to mature my
-                    skillset in front-end development. I'm excited to use Treehouse to supercharge my skills, while
-                    empowering myself by learning. </p>
+                <img id="top" src="img/responsive-layout-profile.png" alt="Profile image">
+                <p>Hello, everyone! I'm a front-end developer who is looking to advance my
+                    skillset in HTML, CSS, JavaScript, and libraries like React.js. I'm excited to use Treehouse to
+                    supercharge my skills, while
+                    empowering myself by learning along with like-minded developers! </p>
             </header>
 
             <main class="content">
                 <article>
-                    <h3 class="content-label">my Portfolio</h3>
+                    <h3 id="portfolio" class="content-label">My Portfolio</h3>
 
-                    <img src="img/portfolio-1.png" alt="Portfolio picture" class="img-responsive">
-                    <h2 class="content-style">Marketing Page</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi vitae libero facilis aperiam
-                        iusto eum veniam atque reprehenderit ratione assumenda.</p>
+                    <section class="boxes">
+                        <div class="box-items">
+                            <img src="img/portfolio-1.png" alt="Portfolio picture" class="img-responsive">
+                            <h2 class="content-style">Marketing Page</h2>
+                            <p>This project shows the front page of a marketing website meant for a specific business
+                                I'm interested in.</p>
+                        </div>
+
+                        <div class="box-items">
+                            <img src="img/portfolio-2.png" alt="Search image" class="img-responsive">
+                            <h2 class="content-style">Search Page</h2>
+                            <p>This project serches through a specific database to find information that the user is
+                                trying to look up.</p>
+                        </div>
+
+                        <div class="box-items">
+                            <img src="img/portfolio-3.png" alt="Travel site image" class="img-responsive">
+                            <h2 class="content-style">Travel App</h2>
+                            <p>This project compares travel times based on different transportation methods and shows
+                                you the best one.</p>
+                        </div>
+
+                        <div class="box-items">
+                            <img src="img/portfolio-4.png" alt="Image of a map" class="img-responsive">
+                            <h2 class="content-style">Map of Favorite Spots</h2>
+                            <p>This project uses mapping APIs to plot points for my favorite spots in the city for a
+                                do-it-yourself walking tour.</p>
+                        </div>
+
+                        <div class="box-items">
+                            <img src="img/portfolio-5.png" alt="Photo image" class="img-responsive">
+                            <h2 class="content-style">Photo Gallery</h2>
+                            <p>This project shows pictures from a recent trips to the viewer, and allows them to easily
+                                navigate through photos.</p>
+                        </div>
+
+                        <div class="box-items">
+                            <img src="img/portfolio-6.png" alt="Calculator image" class="img-responsive">
+                            <h2 class="content-style">Calculator</h2>
+                            <p>Anyone can put in the numbers they want, press the big blue button, and view the results.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- ============== 
+                        add background color and 
+                        margin/padding if necessary
+                    ===================== -->
 
 
-                    <img src="img/portfolio-2.png" alt="Search image" class="img-responsive">
-                    <h2 class="content-style">Search Page</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptate assumenda commodi!</p>
 
-                    <img src="img/portfolio-3.png" alt="Travel site image" class="img-responsive">
-                    <h2 class="content-style">Travel App</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptate assumenda commodi!</p>
+                    <section class="other-projects">
+                        <h3 id="portfolio" class="content-label">Other Work</h3>
 
-                    <img src="img/portfolio-4.png" alt="Image of a map" class="img-responsive">
-                    <h2 class="content-style">Map of Favorite Spots</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptate assumenda commodi!</p>
+                        <div class="box-items">
+                            <img src="" alt="">
+                            <h2>Lorem, ipsum.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti saepe alias non!</p>
+                        </div>
 
-                    <img src="img/portfolio-5.png" alt="Photo image" class="img-responsive">
-                    <h2 class="content-style">Photo Gallery</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptate assumenda commodi!</p>
 
-                    <img src="img/portfolio-6.png" alt="Calculator image" class="img-responsive">
-                    <h2 class="content-style">Calculator</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptate assumenda commodi!</p>
+                        <div class="box-items">
+                            <img src="" alt="">
+                            <h2>Lorem, ipsum.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, aspernatur tempora aut odit
+                                quibusdam enim!</p>
+                        </div>
+
+                        <div class="box-items">
+                            <img src="" alt="">
+                            <h2>Lorem, ipsum.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, aspernatur tempora aut odit
+                                quibusdam enim!</p>
+                        </div>
+
+
+                    </section>
+
 
                 </article>
             </main>
 
-            <footer>
+            <footer id="contact">
                 <h3 class="content-label">Contact</h3>
-                <p>If you'd like to chat or are interested in more details about my current projects, I'd love to hear
+                <p>Want to chat? <br> Interested in more details about my current projects? <br> I'd love to hear
                     from you!</p>
-                <p class="contact-info">Phone: <a href="+11115551234"> +1 (111) 555-1234</a></p>
+                <p class="contact-info phone">Phone: <a href="+11115551234"> +1 (111) 555-1234</a></p>
                 <p class="contact-info email">Email: <a href="mailto:webmaster@example.com"> email@yoursite.com</a></p>
 
                 <div class="bottom">
                     <p>Jay Franklin</p>
-                    <p class="all-caps">Back to Top</p>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <!-- <p class="all-caps"><a href="#top">Back to Top</a></p> -->
                 </div>
                 <!-- .bottom class needs centering (flexbox) -->
             </footer>

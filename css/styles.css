@@ -1,9 +1,13 @@
-/****************************  IMPORTED FONTS  ****************************/
+/****************************  
+    IMPORTED FONTS  
+****************************/
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
 
 
-/****************************  BASE STYLES  ****************************/
+/****************************  
+    BASE GLOBAL STYLES  
+****************************/
 
 *,
 *::before,
@@ -12,15 +16,14 @@
 }
 
 html {
-    /* slight margin or padding is shown when applying to HTMl  */
-
+    /* slight margin or padding is shown when applying to HTML  */
     font-size: 1.5rem;
     font-family: 'Source Sans Pro', sans-serif;
-
+    scroll-behavior: smooth;
 }
 
 body {
-    /* Apply 0 margin and padding to body to eliminate default styles*/
+    /* Applied 0 margin and padding on body to eliminate default styles*/
     padding: 0;
     margin: 0;
     background: rgb(228, 224, 224);
@@ -36,7 +39,7 @@ p {
     line-height: 1.3;
 }
 
-/****************************  NAVIGATION STYLES  ****************************/
+/**************************** MOBILE-FIRST NAVIGATION STYLES  ****************************/
 
 .top-links {
     display: flex;
@@ -80,18 +83,19 @@ a:hover {
 }
 
 
-/****************************  HEADER STYLES  ****************************/
+/**************************** MOBILE-FIRST HEADER STYLES  ****************************/
 
 header {
     margin: 2rem 0;
 }
+
 
 header p {
     padding: 1rem;
 }
 
 
-/****************************  CONTENT STYLES  ****************************/
+/**************************** MOBILE-FIRST CONTENT STYLES  ****************************/
 
 .content {
     background-color: rgb(240, 238, 238);
@@ -99,8 +103,7 @@ header p {
 
 }
 
-.content,
-footer {
+.content {
     padding: 3rem 0;
 }
 
@@ -127,13 +130,28 @@ footer {
 
 }
 
+/**************************** MOBILE-FIRST "OTHER WORK" STYLES  ****************************/
+
+.other-projects {
+    background-color: greenyellow;
+    padding: 3rem 0;
+
+}
 
 
-/****************************  FOOTER STYLES  ****************************/
+
+
+
+
+/**************************** MOBILE-FIRST FOOTER STYLES  ****************************/
+
+footer {
+    margin-top: 3rem;
+}
 
 footer p {
     padding: 0 3rem;
-
+    line-height: 1.4;
 }
 
 footer a {
@@ -141,50 +159,204 @@ footer a {
 }
 
 .contact-info {
+    margin: 0 auto;
     white-space: pre;
 }
 
+.phone {
+    margin-bottom: .3rem;
+}
+
 .email {
-    padding-bottom: 2.5rem;
+    padding-bottom: 2.3rem;
 }
 
 .bottom {
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     border-top: 1px solid rgb(172, 172, 172);
-    ;
+    font-size: .80rem;
+    font-weight: bold;
+
 }
 
-.all-caps {
+
+
+.bottom p {
+    line-height: 1.2;
+    margin: 1.5rem .2rem;
+    padding: 0 .5rem;
+    /* border: 1px solid red; */
+}
+
+.bottom ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-transform: uppercase;
 }
 
-.bottom p {
-    font-weight: bold;
+.bottom li {
+    list-style: none;
+    margin: auto .20rem;
+    /* border: 1px solid red; */
 }
 
 
+/* =================================================================
+                            MEDIA QUERIES
+   ================================================================ */
 
 
 
-/****************************  MEDIA QUERIES  ****************************/
 
-/* (TABLET VIEW) Will apply from 768px onwards */
+
+
+/* =================================================================
+            (TABLET VIEW) Will apply from 768px to 1023px
+   ================================================================ */
 @media (min-width: 768px) {
     body {
         background-color: rgb(146, 224, 174);
+        font-size: .9rem;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav li {
+        background-color: inherit;
+        padding: 0 .7rem;
+    }
+
+    header {
+        display: flex;
+        flex-flow: row-reverse;
+        margin: 1.2rem 0;
+        padding: 0 1.5rem 1.2rem 1.5rem;
+    }
+
+    header img {
+        min-width: 45%;
+    }
+
+    header p {
+        padding: 1rem 1.2rem 0 .2rem;
+        text-align: left;
+        line-height: 1.5;
+    }
+
+    .boxes {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .box-items {
+        width: 50%;
+    }
+
+    footer p {
+        padding: 0 6rem;
+        line-height: 1.5;
+    }
+
+    .content-label {
+        margin-bottom: 2rem;
+    }
+
+    .contact-info {
+        margin: 0 auto;
+    }
+
+    .phone {
+        margin: .3rem 0;
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+        padding: 0 1rem;
+        font-size: inherit;
+
+    }
+
+
+
+    .bottom li {
+        margin: 0 .5rem;
     }
 }
 
 
 
-/* (DESKTOP VIEW) Will apply from 1024px onwards */
+
+/* =================================================================
+            (DESKTOP VIEW) Will apply from 1024px onwards 
+   ================================================================ */
 @media (min-width: 1024px) {
     body {
         background-color: #22ffff;
+        font-size: 1.1rem;
+    }
+
+
+    .top-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 2.5rem;
 
     }
 
     .logo-text {
-        color: rgb(87, 87, 87);
+        padding: 0;
+        margin-right: auto;
+        cursor: arrow;
     }
+
+
+    .nav {
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav li {
+        margin: 0 .5rem;
+
+    }
+
+
+    header {
+        display: flex;
+        justify-content: flex-start;
+        margin: 3rem 0;
+        padding: 0 2.5rem;
+    }
+
+    header p {
+        padding-right: 3.4rem;
+    }
+
+    header img {
+        min-width: 35%;
+
+    }
+
+    .boxes {
+        padding: .5rem;
+    }
+
+    .box-items {
+        width: 33%;
+    }
+
+    .bottom {
+        padding: 0 3.5rem;
+    }
+
 }
