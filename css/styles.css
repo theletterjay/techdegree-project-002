@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
 
 /****************************  
     BASE GLOBAL STYLES  
@@ -17,9 +18,10 @@
 
 html {
     /* slight margin or padding is shown when applying to HTML  */
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     font-family: 'Source Sans Pro', sans-serif;
     scroll-behavior: smooth;
+
 }
 
 body {
@@ -28,11 +30,13 @@ body {
     margin: 0;
     background: rgb(228, 224, 224);
     text-align: center;
+    font-size: 1.3rem;
 }
 
 
 .wrapper {
-    margin: 0 auto;
+    margin: auto;
+
 }
 
 p {
@@ -89,9 +93,13 @@ header {
     margin: 2rem 0;
 }
 
+header img {
+    max-width: 92%;
+}
+
 
 header p {
-    padding: 1rem;
+    padding: .4rem 1rem;
 }
 
 
@@ -104,7 +112,7 @@ header p {
 }
 
 .content {
-    padding: 3rem 0;
+    padding: 3rem 0 0;
 }
 
 .content-label {
@@ -132,13 +140,16 @@ header p {
 
 /**************************** MOBILE-FIRST "OTHER WORK" STYLES  ****************************/
 
-.other-projects {
-    background-color: greenyellow;
+.other-work {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    background-color: rgb(216, 226, 201);
     padding: 3rem 0;
-
 }
 
-
+.other-work h3 {
+    font-weight: 800;
+}
 
 
 
@@ -146,7 +157,8 @@ header p {
 /**************************** MOBILE-FIRST FOOTER STYLES  ****************************/
 
 footer {
-    margin-top: 3rem;
+    background-color: rgb(193, 193, 194);
+    padding-top: 2rem;
 }
 
 footer p {
@@ -157,6 +169,20 @@ footer p {
 footer a {
     text-decoration: none;
 }
+
+/**************************** LINK STYLES FOR HEADER/FOOTER ****************************/
+
+footer a:visited,
+.nav a:visited {
+    color: rgb(123, 89, 204);
+}
+
+footer a:hover,
+.nav a:hover {
+    color: rgb(83, 47, 47);
+}
+
+/**************************************************************************************/
 
 .contact-info {
     margin: 0 auto;
@@ -171,55 +197,51 @@ footer a {
     padding-bottom: 2.3rem;
 }
 
+
 .bottom {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border-top: 1px solid rgb(172, 172, 172);
-    font-size: .80rem;
+    font-size: 1.1rem;
     font-weight: bold;
 
 }
 
 
-
 .bottom p {
-    line-height: 1.2;
-    margin: 1.5rem .2rem;
-    padding: 0 .5rem;
+    /* margin: 1.5rem .2rem; */
+    padding: 0 1.3rem;
     /* border: 1px solid red; */
 }
 
 .bottom ul {
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
     text-transform: uppercase;
 }
 
 .bottom li {
     list-style: none;
-    margin: auto .20rem;
+    margin: .15rem 1.3rem;
     /* border: 1px solid red; */
 }
 
 
+/* ===========================================================================
+                                    MEDIA QUERIES
+   =========================================================================== */
+
 /* =================================================================
-                            MEDIA QUERIES
+            (TABLET VIEW) Will apply from 768px to 1024px
    ================================================================ */
 
 
-
-
-
-
-/* =================================================================
-            (TABLET VIEW) Will apply from 768px to 1023px
-   ================================================================ */
 @media (min-width: 768px) {
     body {
-        background-color: rgb(146, 224, 174);
-        font-size: .9rem;
+        background-color: rgb(159, 215, 235);
+        font-size: 1.3rem;
     }
 
     .nav {
@@ -229,27 +251,31 @@ footer a {
 
     .nav li {
         background-color: inherit;
-        padding: 0 .7rem;
+        padding: 0 .4rem;
     }
 
     header {
         display: flex;
         flex-flow: row-reverse;
+        justify-content: space-around;
         margin: 1.2rem 0;
-        padding: 0 1.5rem 1.2rem 1.5rem;
+        padding: 0 1.5rem 2rem 1.5rem;
     }
 
     header img {
-        min-width: 45%;
+        min-width: 40%;
     }
 
     header p {
-        padding: 1rem 1.2rem 0 .2rem;
         text-align: left;
         line-height: 1.5;
+        margin-top: 3rem;
+        padding: 0;
+        padding-right: .5rem;
     }
 
-    .boxes {
+    .boxes,
+    .work-boxes {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -258,6 +284,13 @@ footer a {
     .box-items {
         width: 50%;
     }
+
+    .other-work {
+        background-color: rgb(23, 97, 82);
+        color: rgb(240, 217, 217);
+    }
+
+
 
     footer p {
         padding: 0 6rem;
@@ -279,29 +312,34 @@ footer a {
     .bottom {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 1.5rem;
         padding: 0 1rem;
         font-size: inherit;
 
     }
 
+    .bottom ul {
+        flex-direction: row;
+        align-items: center;
+    }
 
 
     .bottom li {
         margin: 0 .5rem;
     }
+
 }
 
 
 
-
 /* =================================================================
-            (DESKTOP VIEW) Will apply from 1024px onwards 
+            DESKTOP VIEW (Will apply from 1024px) 
    ================================================================ */
+
+
 @media (min-width: 1024px) {
     body {
-        background-color: #22ffff;
-        font-size: 1.1rem;
+        background-color: #94e2e2;
+        font-size: 1.5rem;
     }
 
 
@@ -316,7 +354,6 @@ footer a {
     .logo-text {
         padding: 0;
         margin-right: auto;
-        cursor: arrow;
     }
 
 
@@ -330,33 +367,61 @@ footer a {
 
     }
 
-
     header {
         display: flex;
-        justify-content: flex-start;
-        margin: 3rem 0;
-        padding: 0 2.5rem;
-    }
-
-    header p {
-        padding-right: 3.4rem;
+        flex-flow: row-reverse;
+        justify-content: space-between;
+        margin: 1rem 0;
+        padding: 0 1.5rem 2rem 1.5rem;
     }
 
     header img {
         min-width: 35%;
+        /* padding: 1rem; */
+    }
+
+    header p {
+        text-align: left;
+        line-height: 1.5;
+        margin-top: 3rem;
+    }
+
+
+
+    .intro {
+        width: 45%;
+        justify-content: center;
+    }
+
+
+    header img {
+        width: 50%;
+        max-width: 200px;
+        height: auto;
 
     }
 
-    .boxes {
+    .content {
+        background-color: rgb(231, 225, 225);
+    }
+
+    .boxes,
+    .work-boxes {
         padding: .5rem;
     }
+
+    .other-work {
+        background-color: rgb(128, 110, 87);
+        color: #fff;
+    }
+
 
     .box-items {
         width: 33%;
     }
 
     .bottom {
-        padding: 0 3.5rem;
+        padding: 0 3rem;
     }
 
 }
