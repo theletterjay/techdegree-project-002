@@ -103,7 +103,7 @@ header p {
 }
 
 /* ===============================================
-            (MOBILE-FIRST) ARTICLE + SECTION STYLES
+        (MOBILE-FIRST) ARTICLE + SECTION STYLES
     =============================================== */
 .content {
     background-color: rgb(240, 238, 238);
@@ -198,6 +198,11 @@ footer a {
 .bottom ul {
     display: flex;
     justify-content: center;
+    /* ===============================================
+        Added "column" f.direction instead of "row" 
+        because links were very close. 
+        Can adjust, if needed.
+    =============================================== */
     flex-direction: column;
     text-transform: uppercase;
 }
