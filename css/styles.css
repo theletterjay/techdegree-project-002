@@ -20,7 +20,6 @@
 html {
     font-family: 'Source Sans Pro', sans-serif;
     scroll-behavior: smooth;
-
 }
 
 body {
@@ -35,7 +34,6 @@ body {
 
 .wrapper {
     margin: auto;
-
 }
 
 p {
@@ -97,7 +95,6 @@ header img {
     max-width: 92%;
 }
 
-
 header p {
     padding: .4rem 1rem;
 }
@@ -108,7 +105,6 @@ header p {
 .content {
     background-color: rgb(240, 238, 238);
     width: 100%;
-
 }
 
 .content {
@@ -124,6 +120,10 @@ header p {
     margin-bottom: 3rem;
 }
 
+.content p {
+    padding: 0 3rem;
+}
+
 .img-responsive {
     width: 95%;
     margin-bottom: .5rem;
@@ -131,11 +131,6 @@ header p {
 
 .content-style {
     font-weight: 600;
-}
-
-.content p {
-    padding: 0 3rem;
-
 }
 
 /* ===============================================
@@ -232,8 +227,6 @@ footer a:hover,
 /* =================================================================
             (TABLET VIEW) Applies from 768px to 1024px
    ================================================================ */
-
-
 @media (min-width: 768px) {
     body {
         background-color: rgb(159, 215, 235);
@@ -323,7 +316,6 @@ footer a:hover,
         justify-content: space-between;
         padding: 0 1rem;
         font-size: inherit;
-
     }
 
     .bottom ul {
@@ -337,8 +329,6 @@ footer a:hover,
     }
 
 }
-
-
 
 /* =================================================================
             DESKTOP VIEW (Will apply from 1024px) 
@@ -357,7 +347,6 @@ footer a:hover,
         flex-direction: row;
         align-items: center;
         padding: 2.5rem;
-
     }
 
     .logo-text {
@@ -372,7 +361,6 @@ footer a:hover,
 
     .nav li {
         margin: 0 .5rem;
-
     }
 
     /* ==========================================
@@ -405,7 +393,6 @@ footer a:hover,
         width: 50%;
         max-width: 200px;
         height: auto;
-
     }
 
     /* ===============================================
@@ -431,7 +418,6 @@ footer a:hover,
         background-color: rgb(128, 110, 87);
         color: #fff;
     }
-
 
     /* ===============================================
                  (DESKTOP) FOOTER STYLES
