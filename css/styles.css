@@ -7,7 +7,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
 
 
-
 /* ===============================================
             (MOBILE-FIRST) GLOBAL STYLES
     =============================================== */
@@ -258,15 +257,14 @@ footer a:hover,
     }
 
     header img {
-        min-width: 40%;
+        min-width: 40.5%;
     }
 
     header p {
         text-align: left;
         line-height: 1.5;
-        margin-top: 3rem;
         padding: 0;
-        padding-right: .5rem;
+        padding-right: .7rem;
     }
 
     /* ===============================================
@@ -375,25 +373,21 @@ footer a:hover,
     }
 
     header img {
+        max-width: 200px;
         min-width: 32.5%;
+        height: auto;
     }
 
     header p {
         text-align: left;
         line-height: 1.5;
-        margin-top: 3rem;
     }
 
     .intro {
-        width: 45%;
+        width: 55%;
         justify-content: center;
     }
 
-    header img {
-        width: 50%;
-        max-width: 200px;
-        height: auto;
-    }
 
     /* ===============================================
             (DESKTOP) ARTICLE + SECTION STYLES
