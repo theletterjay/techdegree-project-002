@@ -206,6 +206,12 @@ footer a {
     margin: .15rem 1.3rem;
 }
 
+
+/*  ===== Hides full navigation ===== */
+.full {
+    display: none;
+}
+
 /* ===============================================
      (MOBILE-FIRST) HEADER/FOOTER - LINK STYLES
     =============================================== */
@@ -257,7 +263,7 @@ footer a:hover,
     }
 
     header img {
-        min-width: 40.5%;
+        max-width: 40.5%;
     }
 
     header p {
@@ -321,11 +327,18 @@ footer a:hover,
         align-items: center;
     }
 
-
     .bottom li {
         margin: 0 .5rem;
     }
 
+    /* ===== Displays full navigation ===== */
+    .top {
+        display: none;
+    }
+
+    .full {
+        display: flex;
+    }
 }
 
 /* =================================================================
